@@ -1,0 +1,20 @@
+{
+  "name": "polly",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.mjs",
+  "scripts": {
+    "build": "tsc",
+    "build:prod": "esbuild src/index.ts --bundle --platform=node --outfile=dist/index.js"
+  },
+  "dependencies": {
+    "@aws-sdk/client-polly": "^3.730.0",
+    "@aws-sdk/client-s3": "^3.730.0",
+    "@aws-sdk/lib-storage": "^3.730.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.3",
+    "esbuild": "^0.25.1"
+  },
+  "private": true
+}
